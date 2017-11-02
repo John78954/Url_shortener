@@ -1,0 +1,8 @@
+<%= form_tag('/', method: 'post') do %>
+<%= text_field_tag :long_url, params[:long_url], placeholder: "Long Url", autofocus: true %>
+<%= button_tag(type: :submit) do %>
+shorten_url
+<% end %>
+<% end %>
+
+<%= render 'url/list' %>
